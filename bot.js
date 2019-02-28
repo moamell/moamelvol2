@@ -198,7 +198,7 @@ Link: ${serverQueue.songs[0].url}
                 .setColor(['#f9fcfc'])
             return msg.channel.sendEmbed(embedsong2); 
     }
-    else if(msg.content.startsWith(`${PREFIX}volume`)){
+    else if(msg.content.startsWith(`${PREFIX}vol`)){
         if(!serverQueue){
             var embedvolume1 = new Discord.RichEmbed()
                 .setTitle(`It does nothing at the moment!`)
@@ -314,7 +314,7 @@ Playing: ${serverQueue.songs[0].title}`)
         return msg.channel.sendEmbed(embedunmute3);
         }
     }
-    else if(msg.content.startsWith(`${PREFIX}helpmusic`)){
+    else if(msg.content.startsWith(`${PREFIX}help`)){
         var embedhelp = new Discord.RichEmbed()
             .setTitle(`marcos-MusicBot Commands`)
             .addField("play [YouTube Link/Playlist]", "Usage: `!!play` Description: To play See The YouTube Linke And playlist.", false)
@@ -323,8 +323,8 @@ Playing: ${serverQueue.songs[0].title}`)
             .addField("stop", "Usage: `!!stop` Description: To Bot disconnected.", false)
             .addField("song", "Usage: `!!song` Description: To Check The Current playing song.", false)
             .addField("queue", "Usage: `!!queue` Description: To Check The Queue List.", false)
-            .addField("volume", "Usage: `!!volume` Description: To See Volume.", false)
-            .addField("volume [Wert]", "Usage: `!!volume` Description: To Changes the volume level to the specified value.", false)
+            .addField("vol", "Usage: `!!volume` Description: To See Volume.", false)
+            .addField("vol [Wert]", "Usage: `!!volume` Description: To Changes the volume level to the specified value.", false)
             .addField("pause", "Usage: `!!pause` Description: To pause The Current Playing Song.", false)
             .addField("resume", "Usage: `!!resume` Description: To Resume The Paused Song.", false)
             .addField("mute", "Usage: `!!mute` Description: To mute Bot.", false)
